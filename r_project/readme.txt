@@ -1,0 +1,1 @@
+konfiguracny subor na server byethost9 je database.php

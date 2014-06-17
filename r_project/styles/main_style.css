@@ -1,0 +1,688 @@
+/*
+#19C719 - zelená
+#FF0000 - èervená
+
+*/
+html {
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin-top: 0px;
+  width: 1000px;
+  margin: auto; 
+  background-image: linear-gradient(#E6E6E6, #FFFFFF);
+  background-repeat: no-repeat;
+  padding-bottom: 81px;
+}
+
+.header {  
+  border-radius: 8px;
+  border-bottom: none;
+  border-bottom: 3px solid #19C719;
+  width: 100%;
+  background-color: #FFFFFF;
+  padding-top: 20px;
+  padding-bottom: 20px; 
+  /*margin-top: 0px;*/
+  display: block;
+  /*background-image: linear-gradient(#BF8A30, #FFFFFF) ; */
+
+}
+
+.telo {
+  width: 100%;
+  margin-left: 22%;
+  background-color: #FFFFFF;
+}
+
+
+section {
+  width: 750px;
+  min-height: 200%;
+  display: block;
+  background-color: #fff;
+}
+
+.item {
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+  position: relative;
+  float: left;
+  font-size: 0.8em;
+  width: 250px;
+  height: auto;
+  height: 1%;   
+  outline: solid 1px #19C719; /*#909090;*/ 
+  background-color: #fff;
+  display: inline-block;
+}
+
+.item h3 {
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  font-size: 13px;
+   background-color: #b3f8a1;
+   border-radius: 25px;
+  text-align: center;
+}
+
+.item a {
+  color: #19C719;
+  text-decoration: none;
+  display: block;
+  padding-top: 0.7em;
+}
+
+.item .slug {
+  height: 150px;
+  margin: 0em;
+  border-top: none;
+  margin-top: -1em;
+  /*border: solid 1px #42E73A;*/
+  border-bottom: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 5px;
+  display: block;
+  background-color: #fff;
+}
+
+.item .nazov {
+  width: 100%;
+  margin: 0em;
+  color: #58E000; 
+  text-align: center;
+  padding: 1em 0 2em 0;
+   background-image: linear-gradient(#E6E6E6, #FFFFFF);
+  /*background: linear-gradient(#42E73A, #2D9B27);  */
+}
+
+.item .cena {
+  margin: 0em;
+  border-bottom: solid 1px #42E73A;
+  border-top: none;
+  display: block;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+
+.item:hover > .nazov {
+  border: solid 1px transparent;
+  background: linear-gradient(#A7A7A7, #FFFFFF);
+  color: #000000;  
+} 
+
+.item:hover > #thumbnail {
+  border: solid 1px #58E000;
+  zoom: 1.1;
+}                          
+
+.skladom { /*Zobrazovanie ze je tovar skladom */
+  color: #19C719;
+  font-weight: bold;
+  text-align: center;   
+}
+
+.nie_skladom { /*ze nie je skladom*/
+  color: #19C719;
+  font-weight: bold;
+  text-align: center; 
+  color: #FF0000;
+}
+
+#logo {
+  margin-left: 20px;
+}
+
+h1 {
+  color: #00BF32;
+}
+
+.error {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  color: #E5100B;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#registration_error {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+#login_bar a:hover {
+   background: linear-gradient(#39E639, #269926);
+   box-shadow: 1px 1px #008500;
+}
+
+#login_bar li:hover > a {
+  color: #FFFFFF;
+  text-shadow: 1px 1px #353535;
+}
+
+
+#login_bar {
+  -webkit-padding-start: 0px;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 1em;
+  list-style: none;
+  display: block;
+  float: left;
+  width: 100%;
+  height: 27px;
+  margin-left: 0em;
+  margin-top: 0em;
+  background: linear-gradient(#767676, #353535);
+}  
+
+#login_bar ul {
+  width: 100%;
+  display: inline-block;
+  list-style: none;
+  /*margin-top: -10px; */
+ /* display: inline-block; */
+ /* background: linear-gradient(#767676, #353535); */
+  
+}
+
+#login_bar li {
+  margin-left: 0px;
+  position: relative;
+  float: left;
+  text-align: center;
+  width: 150px;
+  display: inline;
+  border-right: solid 2px #3b3b3b;
+ /* padding: 0 5% 0 5%; */ 
+}
+
+.navi {
+  padding:0.2em 0 0.2em 0; 
+  display:block;
+  color: #58E000;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 1px 1px #1B1B1B; 
+}
+ 
+#log {
+  width: 300%;
+  display: inline;
+}                       
+
+.logovatko { 
+  display: inline;
+  text-align: right;
+  background-color: transparent;
+  border-radius: 8px;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
+#logged {
+  font-weight: bold;
+  font-size: 1em;
+  color: #58E000; 
+}
+
+#nelognuty_form {
+  padding-right: 240px;
+}
+
+#nelognuty_form form {   /*sirka elementu ktory uchovava prihlasovaci formular*/
+  width: 367px;
+  margin-left:0px;
+}
+
+#nelognuty_form form:hover {
+  background: linear-gradient(#767676, #353535);
+}
+
+#nelognuty_form:hover > #login_bar li {
+  background: linear-gradient(#fff, #fff);
+}
+
+#login_username {  /*username input field*/
+  margin-left: 0px;
+  width: 150px;
+}
+
+#login_password {  /*password input field*/
+  margin-left: 5px;
+  width: 150px;
+}
+
+#nelognuty_form #login_submit { /*tlacidlo login*/
+  margin-left: 5px;
+  width: 12%;
+}
+
+#logged a {
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none; 
+  color: #FFFFFF;
+}
+
+#login_bar li:hover {
+   background: linear-gradient(#39E639, #269926);
+   box-shadow: 1px 1px #008500;
+}
+
+#login_bar li:hover > a {
+  color: #FFFFFF;
+  text-shadow: 1px 1px #353535;
+}
+
+#nelognuty_form form:hover > #login_bar li {
+  background-color: #fff;
+}
+
+.login {
+  border-radius: 6px;
+  /*border: solid 2px #58E000;*/
+  border: solid 2px #39E639;
+  /*border-color: rgba(7, 94, 7, .5); */
+  box-shadow: 0 1px 1px #3D3C3C;
+}
+
+#logout {
+  float: right;
+  height: 25px;
+}
+
+.about {
+  display: block;
+  /*background-color: #EBEBEB; */
+  /*background: linear-gradient(#A1DBA1, #A1DBA1); */
+  background-image: linear-gradient(#FFFFFF, #E6E6E6);
+  width: 100%;
+}
+
+.about h2 {
+  padding: 1%;
+  border: solid 1px transparent;
+  border-bottom-left-radius: 15px;
+  display: block;
+  background: #7FD44C;
+  margin-left: 2%;
+}
+
+.about h3 {
+  color: #7FD44C;
+}
+.about div {
+  text-align: justify;
+  border: solid 2px transparent;
+  border-radius: 10px;
+  text-indent: 2em;
+  background-color: #FFFFFF;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 1% 1% 1% 1%;
+}
+
+.about a {
+  color:#269926;
+}
+
+.about span {
+  font-style: oblique;
+  color: #58E000;
+}
+
+#uc {
+  border-top: 6px solid;
+  border-color: #19C719;
+  display: block;
+  text-align:center;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+#uc1 {
+  border-top: 6px solid;
+  border-color: #19C719;
+  display: block;
+  text-align:center;
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+}
+
+#uc1 ul { /*UL registraèného formulára*/
+  width: 30%;
+  list-style-type: none;
+  text-align: left;
+  margin-left: 30%;
+}
+
+#uc ul { /*UL registraèného formulára*/
+  width: 30%;
+  list-style-type: none;
+  text-align: left;
+  margin-left: 30%;
+}
+
+.thumbnail {
+  border: solid 1px #EAEAEA;  
+  margin-top: -1em;
+  text-align: center;
+  display: block;
+  background-color: #FFFFFF;
+}
+
+.thumbnail img {
+  width: 70%;
+  height: auto;
+}
+
+aside { /*Filtracia tovaru bocny panel*/
+  text-align: left;
+  background-color: #fff;
+  position: absolute;
+  float: left;
+  width: 217px;
+  border-right: 3px solid #19C719;
+  min-height: 100%;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside li {
+  color: #58E000; 
+}
+
+aside a {
+  display: block;
+  text-decoration: none;
+  color: #595959;
+}
+
+aside .aside_navigator { 
+  padding-left: 3%;
+  border-radius: 15px 0 0 0;
+  background-color: #f4f4f1;
+}
+
+aside .aside_vyssia_polozka {
+  margin-left: 1em;
+}
+
+aside .aside_polozka {
+  margin-left: 2em;
+}
+
+aside a:hover {
+  text-shadow: 1px 1px #FDF952;
+  /*text-decoration: underline;*/
+  background-image: linear-gradient(#FDF952, #F8ffab);
+}
+
+.do_kosika_button {
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  top: 215%;
+  left: 67.5%;
+}
+
+#kosik_prazdny_notice {
+  text-decoration: none;
+  font-weight: bold; 
+  color: #58E000;
+  text-align: center; 
+}
+
+#kupit_submit {
+  margin-left: 400px;
+}
+
+.login_prompt {
+  width:100%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.login_prompt a {
+  text-decoration: none;
+  font-weight: bold; 
+  color: #58E000;
+}
+
+#vyber_dopravy {
+  text-align: left;
+}
+
+#vyber_dopravy p {
+  text-align: center;
+}
+
+#vyber_dopravy div {
+  margin-left: 43%;
+}
+
+.pridane_notification {
+  color: #42e73a;
+}
+
+.pridane_chyba {
+  color: #fb0012;
+  margin-left: 2em;
+}
+
+
+.detail {  /*section pri zobrazeni detailu tovaru*/
+  width: 1000px;
+  text-align: justify;
+  border: solid 3px;
+  border-left: none;
+  border-right: none;
+  border-color: #19C719;
+  background-color: #FFF;
+}
+
+.detail div {
+  min-height: 100%;
+  width: 94%;
+  margin-left: 3%;
+}
+
+#header_detailu {
+  border-top: solid 1px #b4b1b1;
+  border-bottom: solid 1px #b4b1b1;
+}
+
+.detail h2 {
+  margin-left: 3%;
+  font-weight: bold;
+  font-size: 30px;
+  color: #a0a0a0;
+}
+
+.detail p { 
+}
+
+.detail img {  /*formatovanie obrazka pri zobrazeni detailu tovaru*/
+  width: 33%;
+  height: auto;
+  padding-right: 3%;
+  float: left;
+}
+
+#detail_slug {
+  margin-top: 5%;
+}
+
+.detail_cena {  /*formatovanie vypisu ceny pri zobrazeni detailu tovaru*/
+  clear: right;
+  display: block;
+  position: relative;
+  top: 100%;
+  font-weight: bold;
+  padding: 15px 5px 15px 5px;
+  float: right;
+  border: solid 2px #b4b1b1;
+  width: 500px;
+  height: auto;
+  margin-top: 5%;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.detail_cena span {
+  float: right;
+  font-size: 1.4em;
+  color: #19C719;
+  margin-left: 15em;
+}
+
+#cena_bez_dph {
+  margin-top: -25px;
+}
+
+#detail_popis {
+  margin-top: 0%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-indent: 2em;
+  width: 90%;
+  margin-left: 5%;
+  clear: left;
+  display: block;
+  position: relative;
+  top: 100%;
+  border-top: solid 1px #b4b1b1;
+  border-bottom: solid 1px #b4b1b1;
+}
+
+.detail table {
+  margin-left: 5%;
+}
+
+.detail .detail_navi {
+  clear: both;
+  position: relative;
+  top: 100%;
+  height: 40px;
+  margin-left: 0%;
+  width: 1000px;
+}
+
+.detail ul { 
+  text-align: center; 
+  -webkit-padding-start: 40px;
+  height: 1%;
+  margin-left: -3%;
+  width: 1000px;
+  list-style: none;
+  clear: both;
+  position: relative;
+}
+
+.detail li {
+   height: 20px;
+   border-top: 2px solid #a3f961;
+   border-bottom: 2px solid #a3f961;
+  -webkit-transition: background 0.5s linear;
+  -moz-transition: background 0.5s linear;
+  -ms-transition: background 0.5s linear;
+  -o-transition: background 0.5s linear;
+  transition: background 0.5s linear;
+  text-align: center;
+  display: inline-block;
+  width: 200px;
+  padding: 0 20px 0 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;  
+}
+
+.detail li a {
+  font-weight: bold;
+  text-shadow: 1px 1px #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  text-decoration: none;
+  color: #19C719;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
+  padding-left: 65px;
+  padding-right: 65px;
+}
+
+.detail li:hover {
+   background-color: #a3f961;
+}
+
+#detail_foto {
+  width: 100%;
+  min-height: auto;
+  text-align: center;
+}
+
+#detail_foto img {
+  background-color: #fff;
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-left: -3%;
+  width: 90%;
+  height: auto;
+}
+
+.detail_komentar {
+  border-radius: 8px;
+  padding-bottom: 10px;
+  background-image: linear-gradient(#e1f9ce, #eefbe4);
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  margin-top: 0%;
+}                                                   
+
+.detail_komentar .header_komentara {
+  font-weight: bold;
+   background-image: linear-gradient(#8bf13c, #c8f3a8);
+   width: 100%;
+}
+
+.detail_komentar .autor_komentara {
+  text-indent: 2em;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-top-left-radius: 8px;  
+  border-top-right-radius: 8px;
+  background-image: linear-gradient(#8bf13c, #c8f3a8);
+  display: block;
+}
+
+.detail_komentar .cas_komentara {
+  padding-left: 2em;
+  padding-right: 2em;
+  background-image: linear-gradient(#c8f3a8, #8bf13c);
+  float: right;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+textarea {
+  width: 100%;
+  height: 5em;
+}
+
+footer {
+  border-top: solid #19c719;
+  clear: both;
+  background-color: #9A9A9A;
+  text-align: center;
+}
